@@ -32,5 +32,17 @@ local_ai_searcher/
 └── requirements.txt
 
 
+# 🧪 Step 1: Clone the Repo
 git clone https://github.com/yourusername/local_ai_searcher.git
 cd local_ai_searcher
+
+# 🐍 Step 2: Create Virtual Environment & Install Dependencies
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+# 📦 Step 3: Manual Install (If needed)
+pip install langchain langchain-community
+
+# 🦙 Step 4: Start Mistral LLM Locally
+ollama run mistral
