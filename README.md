@@ -31,7 +31,7 @@ local_ai_searcher/
 ├── llm.py
 └── requirements.txt
 
-# ⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 🧪 Step 1: Clone the Repo
 bash
 Copy
@@ -39,7 +39,7 @@ Edit
 git clone https://github.com/yourusername/local_ai_searcher.git
 cd local_ai_searcher
 
-# 🐍 Step 2: Create Virtual Environment & Install Dependencies
+## 🐍 Step 2: Create Virtual Environment & Install Dependencies
 bash
 Copy
 Edit
@@ -52,12 +52,12 @@ bash
 Copy
 Edit
 pip install langchain langchain-community
-# 🦙 Step 3: Start Mistral Locally (Ollama)
+## 🦙 Step 3: Start Mistral Locally (Ollama)
 bash
 Copy
 Edit
 ollama run mistral
-# 🧠 Step 4: Create llm.py
+## 🧠 Step 4: Create llm.py
 python
 Copy
 Edit
@@ -67,7 +67,7 @@ from langchain_community.llms import Ollama
 def get_llm(model="mistral"):
     return Ollama(model=model)
 
-#🔧 How It Works
+##🔧 How It Works
 Each agent handles a specific part of the research process:
 
 # Agent	Role
@@ -76,7 +76,7 @@ Each agent handles a specific part of the research process:
 ✂️ Summarizer	Condenses large texts into core ideas
 🧠 Synthesizer	Produces structured, readable output
 
-# 🛣️ Roadmap
+## 🛣️ Roadmap
 Feature	Status
 Agent folder setup	✅ Completed
 LangChain + Mistral wired	✅ Completed
@@ -85,7 +85,7 @@ Other Agents (3 total)	🔜 Coming Soon
 Streamlit UI (optional)	🔜 Planned
 Export to PDF/Notion	🔜 Planned
 
-# 💡 Ideal Use Cases
+## 💡 Ideal Use Cases
 ✅ Researching complex technical topics
 ✅ Summarizing papers, docs, or articles
 ✅ Generating structured reports from raw info
@@ -95,9 +95,9 @@ Export to PDF/Notion	🔜 Planned
 Got cool agent ideas? Want to add new features like voice input or frontend UI?
 PRs are welcome, bhai! Let’s build it together 💙
 
-# 👤 Author
+## 👤 Author
 Made by Akhil
 📫 DM for collabs, feedback, or memes 😄
 
-# 📜 License
+## 📜 License
 This project is licensed under the MIT License — use it, remix it, improve it!
