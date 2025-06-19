@@ -46,3 +46,55 @@ pip install langchain langchain-community
 
 # 🦙 Step 4: Start Mistral LLM Locally
 ollama run mistral
+
+
+---
+
+## ⚙️ Setup
+
+### 🧪 Step 1: Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/local_ai_searcher.git
+cd local_ai_searcher
+
+
+🐍 Step 2: Create Virtual Environment & Activate
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+ Step 3: Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+🦙 Step 4: Run Mistral via Ollama
+bash
+Copy
+Edit
+ollama run mistral
+🚀 How It Works
+🔧 Agent	🧠 Role Description
+🧠 Analyzer	Breaks user query into actionable steps
+🌍 Searcher	Grabs relevant context (local/web/etc.)
+✂️ Summarizer	Trims and filters for core info
+🧪 Synthesizer	Assembles final readable output
+
+Agents talk to each other using LangChain chains — building up clean, local, smart output 🔥
+
+🔮 Roadmap
+ Basic agent pipeline (Analyzer → Synthesizer)
+
+ Add PDF/URL input support
+
+ Add long-context chunk handling
+
+ Export results to Notion, PDF
+
+ Streamlit frontend UI
+
+👤 Author
+Made with 💙 by Akhil
+Feel free to fork, use, or extend — PRs welcome!
+
+
