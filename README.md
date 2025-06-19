@@ -1,100 +1,58 @@
-# 🚀 Local AI Research Assistant — Offline, Private & Smart 🛡️🧑‍💻
+# 🧠 Local AI Research Assistant – Your Offline Research Copilot
 
-Your personal offline AI research team powered by ✨ **LangChain** + 🦙 **Mistral via Ollama**.  
-Run intelligent agents that analyze, search, summarize, and synthesize — all 100% locally.
+**Private. Multi-Agent. LangChain‑Powered.**  
+A fully local system that breaks down complex topics into clean, summarized research using Mistral + LangChain — all running on your machine, no API needed.
 
-> 🏁 Think of it like having your own **AI research lab** on your laptop — no API keys, no cloud, no limits.
-
----
-
-## 🌟 Project Goals
-
-🎯 Build a **Multi-Agent Local AI Research Assistant** with:
-
-- 🧩 Framework: `LangChain`  
-- 🦙 LLM: Local `Mistral` via Ollama  
-- 🤖 Agents:  
-  🔍 `Analyzer` → 🌐 `Searcher` → ✂️ `Summarizer` → 🧠 `Synthesizer`
+> 📚 Built for devs, researchers & students who want ChatGPT‑style research — fully offline and customizable.
 
 ---
 
-## 📂 Folder Structure
+## ✨ What It Does
 
-```bash
-local_ai_searcher/
-├── agents/
-│   ├── analyzer.py
-│   ├── searcher.py
-│   ├── summarizer.py
-│   └── synthesizer.py
-├── main.py
-├── llm.py
-└── requirements.txt
+✅ Accepts a research topic or technical question  
+✅ Breaks it down into multiple sub-queries  
+✅ Searches local files or online (optional)  
+✅ Summarizes and trims noisy content  
+✅ Synthesizes a final, simplified response
 
+---
 
-# 🧪 Step 1: Clone the Repo
-git clone https://github.com/yourusername/local_ai_searcher.git
-cd local_ai_searcher
+## 🔁 Example Workflow
 
-# 🐍 Step 2: Create Virtual Environment & Install Dependencies
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
+1. 💬 You enter a topic: “How do ZK-SNARKs work?”  
+2. 🧠 Analyzer breaks it into 3–5 sub-topics  
+3. 🔍 Searcher fetches local or online content  
+4. ✂️ Summarizer condenses each one  
+5. 🧪 Synthesizer writes the final output
 
-# 📦 Step 3: Manual Install (If needed)
-pip install langchain langchain-community
+---
 
-# 🦙 Step 4: Start Mistral LLM Locally
-ollama run mistral
+## 🧱 Tech Stack
 
+- 🧩 **LangChain**  
+- 🦙 **Mistral LLM** via [Ollama](https://ollama.com)  
+- 🐍 **Python 3.10+**
 
 ---
 
 ## ⚙️ Setup
 
-### 🧪 Step 1: Clone the Repo
-
 ```bash
+# 1. Clone the repo
 git clone https://github.com/yourusername/local_ai_searcher.git
 cd local_ai_searcher
 
-
-🐍 Step 2: Create Virtual Environment & Activate
+# 2. Create & activate environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
- Step 3: Install Dependencies
-bash
-Copy
-Edit
+# 3. Install dependencies
 pip install -r requirements.txt
-🦙 Step 4: Run Mistral via Ollama
-bash
-Copy
-Edit
+
+# 4. Start Mistral via Ollama
 ollama run mistral
-🚀 How It Works
-🔧 Agent	🧠 Role Description
-🧠 Analyzer	Breaks user query into actionable steps
-🌍 Searcher	Grabs relevant context (local/web/etc.)
-✂️ Summarizer	Trims and filters for core info
-🧪 Synthesizer	Assembles final readable output
 
-Agents talk to each other using LangChain chains — building up clean, local, smart output 🔥
-
-🔮 Roadmap
- Basic agent pipeline (Analyzer → Synthesizer)
-
- Add PDF/URL input support
-
- Add long-context chunk handling
-
- Export results to Notion, PDF
-
- Streamlit frontend UI
-
-👤 Author
-Made with 💙 by Akhil
-Feel free to fork, use, or extend — PRs welcome!
+# 5. Run the Research Assistant
+python main.py
 
 
